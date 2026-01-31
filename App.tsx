@@ -9,13 +9,13 @@ import AIAssistant from './components/AIAssistant';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen selection:bg-blue-500/30">
       <Navbar />
       
       <main>
         <Hero />
         
-        {/* Statistics Strip */}
+        {/* Statistics Strip - Marquee */}
         <section className="py-10 liquid-glass-blue overflow-hidden relative z-20">
           <div className="flex gap-20 whitespace-nowrap animate-marquee">
             {[...Array(10)].map((_, i) => (
